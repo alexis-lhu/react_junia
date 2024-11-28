@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./login.css";
 
 function Login() {
     const Navigate = useNavigate();
@@ -7,7 +8,7 @@ function Login() {
     const [password, setPassword] = useState("");
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Empêche le rechargement de la page
+        e.preventDefault();
         if (username === "ReactUser" && password === "ceciestunmdp") {
             Navigate("/index")
         } else {
@@ -16,27 +17,32 @@ function Login() {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <br />
-            <label>
+        <div className="login-container">
+          <div className="form-container">
+            <form onSubmit={handleSubmit}>
+              <label>
                 Username :
                 <input
-                    type="text"
-                    value={username}
-                    onChange={(e) => setName(e.target.value)} // Mise à jour du state
+                  type="text"
+                  value={username}
+                  onChange={(e) => setName(e.target.value)}
                 />
-            </label>
-            <br />
-            <br />
-            <label>
+              </label>
+              <br />
+              <br />
+              <label>
                 Password :
-                <input type="password"
-                    vale={password}
-                    onChange={(e) => setPassword(e.target.value)} />
-            </label>
-            <button type="submit">Envoyer</button>
-        </form>
-    );
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </label>
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      );
 }
 
 export default Login;

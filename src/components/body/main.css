@@ -1,0 +1,66 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Conteneur principal de l'application */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  /* Contenu principal */
+  .main-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  /* Titre */
+  .main-content h1 {
+    font-size: 1.8rem;
+    color: #0078d7;
+    margin-bottom: 1.5rem;
+    word-wrap: break-word;
+  }
+  
+  /* Bouton */
+  .main-content button {
+    background-color: #0078d7;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+  
+  .main-content button:hover {
+    background-color: #005bb5;
+  }
+  
+  .main-content button:active {
+    background-color: #003f88;
+  }
+  
+  .main-content button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 120, 215, 0.5);
+  }
+  
