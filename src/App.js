@@ -6,6 +6,7 @@ import Index from './components/body/index.js';
 import Main from './components/body/main.js';
 import Login from './components/body/login.js';
 import Echouer from './components/body/echouer.js';
+import Chatbot from './components/body/chatbot.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/index" element={<Index />} />
         <Route path="/echouer" element={<Echouer />} />
+        <Route path="chat" element={<Chatbot />} />
       </Routes>
     </Router>
   );
